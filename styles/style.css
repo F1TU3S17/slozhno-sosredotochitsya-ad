@@ -92,9 +92,6 @@ a:focus-visible {
   bottom: 20px;
 }
 
-.header__theme-menu {
-  /* padding-top: 20px; */
-}
 
 .header__theme-menu-list {
   display: flex;
@@ -144,7 +141,7 @@ a:focus-visible {
   max-inline-size: 491px;
   max-block-size: 117px;
   justify-self: end;
-  align-self: center; 
+  align-self: center;
 }
 
 .title-decor {
@@ -176,6 +173,9 @@ a:focus-visible {
 
 .question-title {
   max-inline-size: 315px;
+}
+
+.question-two-title {
   margin-bottom: 20px;
 }
 
@@ -195,7 +195,7 @@ a:focus-visible {
   gap: 20px;
 }
 
-.answer-card-title { 
+.answer-card-title {
   margin-bottom: 10px;
 }
 
@@ -319,7 +319,7 @@ a:focus-visible {
 
   .header {
     padding-top: 10px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
   }
 
   .question-title {
