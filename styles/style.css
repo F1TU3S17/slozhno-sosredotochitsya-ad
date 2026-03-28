@@ -11,6 +11,9 @@
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+.page__container {
   padding: 0 20px;
 }
 
@@ -304,7 +307,7 @@ a:focus-visible {
 }
 
 @media (width <= 375px) {
-  .page {
+  .page__container {
     padding: 0 10px;
   }
 
