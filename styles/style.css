@@ -80,21 +80,23 @@ a:focus-visible {
 
 .decorated-zone::after {
   position: absolute;
-  bottom: -20px;
   left: 0;
   content: "";
   border-bottom: 1px solid var(--button-color);
   border-left: 1px solid var(--button-color);
   inline-size: 24px;
   block-size: 24px;
-  
+  bottom: 0;
+}
+
+.header__theme-menu {
+  /* padding-top: 20px; */
 }
 
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
   gap: 10px;
-
 }
 
 .header__theme-menu-button {
@@ -133,14 +135,13 @@ a:focus-visible {
   color: var(--main-title-text-color);
   text-transform: lowercase;
   margin-left: -20px;
-
 }
 
 .header-text {
   max-inline-size: 491px;
   max-block-size: 117px;
   justify-self: end;
-  align-self: center;
+  align-self: center; 
 }
 
 .title-decor {
