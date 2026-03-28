@@ -3,6 +3,7 @@
 .page {
   background-image: var(--background-image-url);
   font-size: var(--main-text-size);
+  line-height: 23.4px;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -12,7 +13,6 @@
 
 a {
   color: var(--main-text-color);
-  line-height: 23.4px;
   text-shadow: 2px 2px 0px var(--accent-color);
   font-family: var(--main-font-reg);
   font-size: var(--main-text-size);
@@ -39,11 +39,12 @@ a:focus-visible {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   margin-bottom: 60px;
+  padding-top: 20px;
 }
 
 .decorative-element {
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 0;
   display: flex;
   align-items: center;
@@ -67,7 +68,7 @@ a:focus-visible {
 
 .decorated-zone::before {
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 0;
   content: "";
   border-top: 1px solid var(--button-color);
@@ -79,7 +80,7 @@ a:focus-visible {
 
 .decorated-zone::after {
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   left: 0;
   content: "";
   border-bottom: 1px solid var(--button-color);
@@ -102,7 +103,7 @@ a:focus-visible {
   font-size: var(--main-text-size);
   color: var(--button-color);
   border: none;
-  padding: 5px 13px;
+  padding: 0 13px;
   cursor: pointer;
 }
 
@@ -148,7 +149,6 @@ a:focus-visible {
   font-family: var(--main-font-reg);
   font-size: var(--main-text-size);
   font-weight: bold;
-  line-height: 23.4px;
 }
 
 .accent-title {
@@ -196,7 +196,6 @@ a:focus-visible {
   color: var(--main-text-color);
   font-family: var(--main-font-reg);
   font-size: var(--main-text-size);
-  line-height: 23.4px;
 }
 
 .question-two {
@@ -209,7 +208,6 @@ a:focus-visible {
   gap: 20px;
 }
 
-
 .pictures-section {
   margin-bottom: 60px;
 }
@@ -218,7 +216,6 @@ a:focus-visible {
   margin-top: 20px;
   display: grid;
   gap: 20px;
-
 }
 
 .pictures-container img {
@@ -274,6 +271,10 @@ a:focus-visible {
     align-self: center;
   }
 
+  .header-title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .header-text {
     max-inline-size: 364px;
   }
@@ -291,10 +292,23 @@ a:focus-visible {
 @media (width <= 375px) {
   .header-title {
     margin-left: 0;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .header-text {
-    max-inline-size: 355px;
+    inline-size: 100%;
+  }
+
+  .header {
+    margin-bottom: 40px; 
+  }
+
+  .questions-sections {
+    margin-bottom: 50px;
+  }
+
+  .pictures-section {
+    margin-bottom: 40px;
   }
 
   .question-answers {
