@@ -4,14 +4,14 @@
 */
 
 :root {
-  --background-color: #fff;
+  --background-color: #000028;
   --accent-color: #FF0070;
   --decorative-color: #FF0070;
   --main-title-text-color: #DB00FF;
   --main-title-text-size: 157px;
   --main-text-size: 18px;
   --main-title-shadow-color: #FF0070;
-  --background-image-url: url(/images/cover-image-dark.png) ;
+  --background-image-url: url(../images/cover-image-dark.png) ;
   --button-color: #FF0070;
   --main-font-reg: 'IBM Plex mono', monospace;
   --on-accent-color: #000;

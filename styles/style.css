@@ -34,7 +34,6 @@ a:focus-visible {
 
 
 .header {
-  margin-top: 20px;
   min-block-size: 100vh;
   position: relative;
   display: grid;
@@ -137,7 +136,7 @@ a:focus-visible {
 }
 
 .header-text {
-  max-inline-size: 355px;
+  max-inline-size: 491px;
   max-block-size: 117px;
   justify-self: end;
   align-self: center;
@@ -275,6 +274,10 @@ a:focus-visible {
     align-self: center;
   }
 
+  .header-text {
+    max-inline-size: 364px;
+  }
+
   .header__theme-menu-list {
     flex-direction: column;
   }
@@ -288,6 +291,10 @@ a:focus-visible {
 @media (width <= 375px) {
   .header-title {
     margin-left: 0;
+  }
+
+  .header-text {
+    max-inline-size: 355px;
   }
 
   .question-answers {
