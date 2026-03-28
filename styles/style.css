@@ -133,7 +133,7 @@ a:focus-visible {
   font-family: var(--main-font-reg);
   font-weight: bold;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  line-height: 83%;
+  line-height: 82.5%;
   text-shadow: 4px 4px 0px var(--accent-color);
   color: var(--main-title-text-color);
   text-transform: lowercase;
@@ -264,8 +264,8 @@ a:focus-visible {
   font-family: var(--main-font-reg);
   font-weight: bold;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  line-height: 83%;
-  text-shadow: 2px 2px 0px var(--accent-color);
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0px var(--accent-color);
   color: var(--main-title-text-color);
   text-transform: lowercase;
 }
@@ -282,6 +282,10 @@ a:focus-visible {
 
   .header-text {
     max-inline-size: 364px;
+  }
+
+  .question-title {
+    max-inline-size: 236px;
   }
 
   .header__theme-menu-list {
@@ -312,6 +316,10 @@ a:focus-visible {
 
   .header {
     margin-bottom: 40px; 
+  }
+
+  .question-title {
+    max-inline-size: 355px;
   }
 
   .questions-section {
