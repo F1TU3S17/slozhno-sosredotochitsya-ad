@@ -1,7 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  margin: 0 auto;
+  font-family: var(--main-font-reg);
   background-image: var(--background-image-url);
+  background-color: var(--background-color);
   font-size: var(--main-text-size);
   line-height: 23.4px;
   background-size: cover;
@@ -62,8 +65,8 @@ a:focus-visible {
   block-size: 9px;
   border-radius: 50%;
   background-color: var(--decorative-color);
-  fill: var(--decorative-colo);
-  filter: drop-shadow(0px 0px 4px var(--decorative-colo));
+  fill: var(--decorative-color);
+  filter: drop-shadow(0px 0px 4px var(--decorative-color));
 }
 
 .decorated-zone::before {
@@ -86,7 +89,7 @@ a:focus-visible {
   border-left: 1px solid var(--button-color);
   inline-size: 24px;
   block-size: 24px;
-  bottom: 0;
+  bottom: 20px;
 }
 
 .header__theme-menu {
@@ -161,7 +164,7 @@ a:focus-visible {
 }
 
 
-.questions-sections {
+.questions-section {
   margin-bottom: 80px;
 }
 
@@ -262,6 +265,7 @@ a:focus-visible {
   font-weight: bold;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 83%;
+  text-shadow: 2px 2px 0px var(--accent-color);
   color: var(--main-title-text-color);
   text-transform: lowercase;
 }
@@ -282,6 +286,8 @@ a:focus-visible {
 
   .header__theme-menu-list {
     flex-direction: column;
+    align-items: flex-end;
+    gap: 13px;
   }
 
   .answers-container {
@@ -291,6 +297,10 @@ a:focus-visible {
 }
 
 @media (width <= 375px) {
+  .page {
+    padding: 0 10px;
+  }
+
   .header-title {
     margin-left: 0;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -304,7 +314,7 @@ a:focus-visible {
     margin-bottom: 40px; 
   }
 
-  .questions-sections {
+  .questions-section {
     margin-bottom: 50px;
   }
 
@@ -318,6 +328,7 @@ a:focus-visible {
 
   .pictures-container {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .sunset-item,
