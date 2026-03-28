@@ -314,6 +314,7 @@ a:focus-visible {
   }
 
   .header-text {
+    padding-top: 5px;
     inline-size: 100%;
   }
 
@@ -349,6 +350,7 @@ a:focus-visible {
   .pictures-container {
     grid-template-columns: 1fr;
     gap: 10px;
+    margin-top: 10px;
   }
 
   .sunset-item,
