@@ -183,6 +183,9 @@ a:focus-visible {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 2fr;
+}
+
+.questions-section > .question-answers:not(:last-child) {
   margin-bottom: 80px;
 }
 
@@ -333,7 +336,10 @@ a:focus-visible {
 
   .question-answers {
     grid-template-columns: 1fr;
-    padding-bottom: 50px;
+  }
+
+  .questions-section > .question-answers:not(:last-child) {
+    margin-bottom: 50px;
   }
 
   .question-two {

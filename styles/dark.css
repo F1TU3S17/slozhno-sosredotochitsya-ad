@@ -24,5 +24,6 @@
 }
 
 .theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  background-color: var(--background-color);
+  background-image: var(--background-image-url);
 }
