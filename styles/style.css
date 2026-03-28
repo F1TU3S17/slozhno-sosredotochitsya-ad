@@ -315,6 +315,7 @@ a:focus-visible {
   }
 
   .header {
+    padding-top: 10px;
     margin-bottom: 40px; 
   }
 
@@ -332,6 +333,11 @@ a:focus-visible {
 
   .question-answers {
     grid-template-columns: 1fr;
+    padding-bottom: 50px;
+  }
+
+  .question-two {
+    margin-bottom: 50px;
   }
 
   .pictures-container {
